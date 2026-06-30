@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', sans-serif">
+  <defs>
+    <linearGradient id="titleBg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3a2e7a"/>
+      <stop offset="1" stop-color="#5d4aa3"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="720" fill="#f3effa"/>
+
+  <rect x="0" y="0" width="1200" height="46" fill="url(#titleBg)"/>
+  <text x="22" y="29" fill="#ffffff" font-size="18" font-weight="600">ECOS 认知架构（一）→ 认知状态的坐标系 —— BeliefState</text>
+  <text x="1180" y="29" fill="#c8b9e8" font-size="11" text-anchor="end">不是点，而是带置信度的分布</text>
+
+  <text x="22" y="72" font-size="14" font-weight="700" fill="#1a1a1a">① 5D 能力向量（核心）</text>
+  <text x="162" y="72" font-size="10" fill="#666">每一维 = {-1(不会) … 1(熟练/迁移)} 的实数，再叠加置信度</text>
+
+  <g transform="translate(22, 84)">
+    <rect width="222" height="80" rx="6" fill="#ebe4f7" stroke="#7a5cb0"/>
+    <text x="14" y="34" font-size="22" font-weight="700" fill="#5a3e9a">K</text>
+    <text x="50" y="22" font-size="12" font-weight="600" fill="#3a2e7a">知识掌握</text>
+    <text x="50" y="38" font-size="9" font-style="italic" fill="#7a5cb0">declarative</text>
+    <text x="14" y="60" font-size="9" fill="#444">联合分布 K_mean(0.78) · 协方 K_conf(0.85)</text>
+    <text x="14" y="74" font-size="9" fill="#666">5D 之间 → 5×5 协方对性 / 整合证据</text>
+  </g>
+
+  <g transform="translate(252, 84)">
+    <rect width="222" height="80" rx="6" fill="#dde7f5" stroke="#5478b0"/>
+    <text x="14" y="34" font-size="22" font-weight="700" fill="#4470b8">P</text>
+    <text x="50" y="22" font-size="12" font-weight="600" fill="#2c4a78">程序技能</text>
+    <text x="50" y="38" font-size="9" font-style="italic" fill="#5478b0">procedural</text>
+    <text x="14" y="60" font-size="9" fill="#444">P_mean(0.62) · 协方 P_conf(0.70)</text>
+    <text x="14" y="74" font-size="9" fill="#666">操作序列 · 触发 / 步骤的完整性</text>
+  </g>
+
+  <g transform="translate(482, 84)">
+    <rect width="222" height="80" rx="6" fill="#dde9f4" stroke="#5484b0"/>
+    <text x="14" y="34" font-size="22" font-weight="700" fill="#3a78b8">S</text>
+    <text x="50" y="22" font-size="12" font-weight="600" fill="#2c4a78">策略能力</text>
+    <text x="50" y="38" font-size="9" font-style="italic" fill="#5484b0">strategic</text>
+    <text x="14" y="60" font-size="9" fill="#444">S_mean(0.55) · 协方 S_conf(0.65)</text>
+    <text x="14" y="74" font-size="9" fill="#666">元认知 / 计划 / 调节</text>
+  </g>
+
+  <g transform="translate(712, 84)">
+    <rect width="222" height="80" rx="6" fill="#fcebd9" stroke="#d8a060"/>
+    <text x="14" y="34" font-size="22" font-weight="700" fill="#c47830">C</text>
+    <text x="50" y="22" font-size="12" font-weight="600" fill="#8a4f10">认知域迁移</text>
+    <text x="50" y="38" font-size="9" font-style="italic" fill="#c47830">cross-domain</text>
+    <text x="14" y="60" font-size="9" fill="#444">C_mean(0.40) · 协方 C_conf(0.55)</text>
+    <text x="14" y="74" font-size="9" fill="#666">在新情境 · 自举迁移证据</text>
+  </g>
+
+  <g transform="translate(942, 84)">
+    <rect width="222" height="80" rx="6" fill="#e8e8ee" stroke="#8a8a96"/>
+    <text x="14" y="34" font-size="22" font-weight="700" fill="#555568">X</text>
+    <text x="50" y="22" font-size="12" font-weight="600" fill="#333340">外部支架</text>
+    <text x="50" y="38" font-size="9" font-style="italic" fill="#8a8a96">scaffolding</text>
+    <text x="14" y="60" font-size="9" fill="#444">X_mean(0.30) · 协方 X_conf(0.60)</text>
+    <text x="14" y="74" font-size="9" fill="#666">当前依赖的脚手架 / 工具</text>
+  </g>
+
+  <text x="22" y="192" font-size="14" font-weight="700" fill="#1a1a1a">② BloomProfile（第二坐标轴）</text>
+  <text x="210" y="192" font-size="10" fill="#666">Bloom 6 级 × 5D = 30 格的认知全景</text>
+
+  <g transform="translate(22, 204)">
+    <rect width="186" height="62" rx="6" fill="#f0f4fa" stroke="#7a96c0"/>
+    <text x="12" y="20" font-size="11" font-weight="600" fill="#3a4a78">Remember</text>
+    <text x="12" y="40" font-size="10" fill="#444">0.80</text>
+    <rect x="46" y="34" width="130" height="6" rx="2" fill="#dde4f0"/>
+    <rect x="46" y="34" width="104" height="6" rx="2" fill="#5a8ac0"/>
+    <text x="12" y="56" font-size="9" fill="#666">dominant_layer = Understand</text>
+  </g>
+
+  <g transform="translate(214, 204)">
+    <rect width="186" height="62" rx="6" fill="#f0f4fa" stroke="#7a96c0"/>
+    <text x="12" y="20" font-size="11" font-weight="600" fill="#3a4a78">Understand</text>
+    <text x="12" y="40" font-size="10" fill="#444">0.70</text>
+    <rect x="46" y="34" width="130" height="6" rx="2" fill="#dde4f0"/>
+    <rect x="46" y="34" width="91" height="6" rx="2" fill="#5a8ac0"/>
+    <text x="12" y="56" font-size="9" fill="#666">dominant_layer = Understand</text>
+  </g>
+
+  <g transform="translate(406, 204)">
+    <rect width="186" height="62" rx="6" fill="#f0f4fa" stroke="#7a96c0"/>
+    <text x="12" y="20" font-size="11" font-weight="600" fill="#3a4a78">Apply</text>
+    <text x="12" y="40" font-size="10" fill="#444">0.40</text>
+    <rect x="46" y="34" width="130" height="6" rx="2" fill="#dde4f0"/>
+    <rect x="46" y="34" width="52" height="6" rx="2" fill="#5a8ac0"/>
+    <text x="12" y="56" font-size="9" fill="#666">dominant_layer = Understand</text>
+  </g>
+
+  <g transform="translate(598, 204)">
+    <rect width="186" height="62" rx="6" fill="#f0f4fa" stroke="#7a96c0"/>
+    <text x="12" y="20" font-size="11" font-weight="600" fill="#3a4a78">Analyze</text>
+    <text x="12" y="40" font-size="10" fill="#444">0.20</text>
+    <rect x="46" y="34" width="130" height="6" rx="2" fill="#dde4f0"/>
+    <rect x="46" y="34" width="26" height="6" rx="2" fill="#5a8ac0"/>
+    <text x="12" y="56" font-size="9" fill="#666">dominant_layer = Understand</text>
+  </g>
+
+  <g transform="translate(790, 204)">
+    <rect width="186" height="62" rx="6" fill="#f0f4fa" stroke="#7a96c0"/>
+    <text x="12" y="20" font-size="11" font-weight="600" fill="#3a4a78">Evaluate</text>
+    <text x="12" y="40" font-size="10" fill="#444">0.10</text>
+    <rect x="46" y="34" width="130" height="6" rx="2" fill="#dde4f0"/>
+    <rect x="46" y="34" width="13" height="6" rx="2" fill="#5a8ac0"/>
+    <text x="12" y="56" font-size="9" fill="#666">dominant_layer = Understand</text>
+  </g>
+
+  <g transform="translate(982, 204)">
+    <rect width="186" height="62" rx="6" fill="#f0f4fa" stroke="#7a96c0"/>
+    <text x="12" y="20" font-size="11" font-weight="600" fill="#3a4a78">Create</text>
+    <text x="12" y="40" font-size="10" fill="#444">0.05</text>
+    <rect x="46" y="34" width="130" height="6" rx="2" fill="#dde4f0"/>
+    <rect x="46" y="34" width="6" height="6" rx="2" fill="#5a8ac0"/>
+    <text x="12" y="56" font-size="9" fill="#666">dominant_layer = Understand</text>
+  </g>
+
+  <g transform="translate(22, 290)">
+    <rect width="578" height="106" rx="6" fill="#fcefd9" stroke="#e0a050"/>
+    <text x="14" y="24" font-size="13" font-weight="700" fill="#1a1a1a">③ TC 状态（阈值概念）</text>
+    <text x="14" y="48" font-size="11" fill="#444">pre_liminal → liminal → post_liminal（不可逆）</text>
+    <text x="14" y="72" font-size="11" fill="#444">TC_skill: <tspan font-style="italic" fill="#c47830">liminal</tspan> progress 0.6 · irreversible 标记</text>
+    <text x="14" y="94" font-size="9" fill="#888">概念跨过阈值 → 从"知道"变成"会做"，不可退回</text>
+  </g>
+
+  <g transform="translate(610, 290)">
+    <rect width="568" height="106" rx="6" fill="#fde8e8" stroke="#d87070"/>
+    <text x="14" y="24" font-size="13" font-weight="700" fill="#1a1a1a">④ Misconceptions（误概念集合）</text>
+    <text x="14" y="48" font-size="11" fill="#444">M1: skill == 斜杠命令（误中置信 0.7）</text>
+    <text x="14" y="68" font-size="11" fill="#444">M2: skill == MCP server   M3: skill == hook</text>
+    <text x="14" y="88" font-size="11" fill="#444">M4: skill == prompt 模板  M5: skill == 总是被加载</text>
+  </g>
+
+  <g transform="translate(22, 408)">
+    <rect width="578" height="106" rx="6" fill="#e6f4e6" stroke="#5a9a5a"/>
+    <text x="14" y="24" font-size="13" font-weight="700" fill="#1a1a1a">⑤ LearningDNA（学习者特征）</text>
+    <text x="14" y="48" font-size="11" fill="#444">input 偏好：示例驱动 / 结构化 / 视觉图示</text>
+    <text x="14" y="68" font-size="11" fill="#444">avoid 模式：长段落 / 抽象先行 / 多任务</text>
+    <text x="14" y="88" font-size="11" fill="#444">疲劳模式 / 动机模式 · 动态更新</text>
+  </g>
+
+  <g transform="translate(610, 408)">
+    <rect width="568" height="106" rx="6" fill="#e6eef8" stroke="#5078b0"/>
+    <text x="14" y="24" font-size="13" font-weight="700" fill="#1a1a1a">⑥ Trajectory（成长轨迹）</text>
+    <text x="14" y="48" font-size="11" fill="#444">历史快照（最近 N 次 BeliefState 分布）</text>
+    <text x="14" y="74" font-size="11" fill="#444">预测：A → B 的分布移动（apply 期望 &gt; 0.85）</text>
+  </g>
+
+  <g transform="translate(22, 526)">
+    <rect width="1156" height="50" rx="6" fill="#f0f0f4" stroke="#a0a0a8"/>
+    <text x="14" y="20" font-size="13" font-weight="700" fill="#1a1a1a">⑦ overall_confidence</text>
+    <text x="14" y="40" font-size="11" fill="#444">= 0.78  ·  CTA 对每个对象状态估计的总置信度</text>
+  </g>
+
+  <g transform="translate(22, 596)">
+    <rect width="1156" height="70" rx="6" fill="#efe7f8" stroke="#7a5cb0"/>
+    <text x="14" y="26" font-size="11" fill="#3a2e7a">状态 A / 状态 B<tspan fill="#666"> —— 每个对象的两次快照</tspan></text>
+    <text x="14" y="52" font-size="11" fill="#3a2e7a">A → B<tspan fill="#666"> —— 分布的移动（不是两点相减）</tspan></text>
+  </g>
+
+  <text x="22" y="704" font-size="9" fill="#888">来源: research/10-engineering/01-cta-belief-engine.md 及 Bloom goal library.md</text>
+</svg>
