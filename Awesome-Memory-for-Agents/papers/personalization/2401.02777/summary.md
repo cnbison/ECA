@@ -1,0 +1,15 @@
+# From LLM to Conversational Agent: A Memory Enhanced Architecture with Fine-Tuning of Large Language Models
+
+**arXiv:** [2401.02777](https://arxiv.org/abs/2401.02777)
+**PDF:** [下载](https://arxiv.org/pdf/2401.02777) · 本地: `2401.02777.pdf`
+**作者:** Liu, Na, Chen, Liangyu, Tian, Xiaoyu, Zou, Wei, Chen, Kaijiang, Cui, Ming
+**日期:** 2024/01/05
+
+## Abstract
+
+This paper introduces RAISE (Reasoning and Acting through Scratchpad and Examples), an advanced architecture enhancing the integration of Large Language Models (LLMs) like GPT-4 into conversational agents. RAISE, an enhancement of the ReAct framework, incorporates a dual-component memory system, mirroring human short-term and long-term memory, to maintain context and continuity in conversations. It entails a comprehensive agent construction scenario, including phases like Conversation Selection, Scene Extraction, CoT Completion, and Scene Augmentation, leading to the LLMs Training phase. This approach appears to enhance agent controllability and adaptability in complex, multi-turn dialogues. Our preliminary evaluations in a real estate sales context suggest that RAISE has some advantages over traditional agents, indicating its potential for broader applications. This work contributes to the AI field by providing a robust framework for developing more context-aware and versatile conversational agents.
+
+## 文件
+
+- `2401.02777.pdf` — 论文原文
+- `meta.json` — 结构化元数据

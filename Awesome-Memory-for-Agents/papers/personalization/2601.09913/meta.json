@@ -1,0 +1,9 @@
+{
+  "id": "2601.09913",
+  "title": "Continuum Memory Architectures for Long-Horizon LLM Agents\n",
+  "authors": ["Logan, Joe\n"],
+  "date": "2026/01/14",
+  "abstract": "Retrieval-augmented generation (RAG) has become the default strategy for providing large language model (LLM) agents with contextual knowledge. Yet RAG treats memory as a stateless lookup table: information persists indefinitely, retrieval is read-only, and temporal continuity is absent. We define the \\textit{Continuum Memory Architecture} (CMA), a class of systems that maintain and update internal state across interactions through persistent storage, selective retention, associative routing, temporal chaining, and consolidation into higher-order abstractions. Rather than disclosing implementation specifics, we specify the architectural requirements CMA imposes and show consistent behavioral advantages on tasks that expose RAG&#39;s structural inability to accumulate, mutate, or disambiguate memory. The empirical probes (knowledge updates, temporal association, associative recall, contextual disambiguation) demonstrate that CMA is a necessary architectural primitive for long-horizon agents while highlighting open challenges around latency, drift, and interpretability. \n",
+  "url": "https://arxiv.org/abs/2601.09913",
+  "pdf_url": "https://arxiv.org/pdf/2601.09913"
+}

@@ -1,0 +1,15 @@
+# Learn to Memorize: Optimizing LLM-based Agents with Adaptive Memory Framework
+
+**arXiv:** [2508.16629](https://arxiv.org/abs/2508.16629)
+**PDF:** [下载](https://arxiv.org/pdf/2508.16629) · 本地: `2508.16629.pdf`
+**作者:** Zhang, Zeyu, Dai, Quanyu, Li, Rui, Bo, Xiaohe, Chen, Xu, Dong, Zhenhua
+**日期:** 2025/08/15
+
+## Abstract
+
+LLM-based agents have been extensively applied across various domains, where memory stands out as one of their most essential capabilities. Previous memory mechanisms of LLM-based agents are manually predefined by human experts, leading to higher labor costs and suboptimal performance. In addition, these methods overlook the memory cycle effect in interactive scenarios, which is critical to optimizing LLM-based agents for specific environments. To address these challenges, in this paper, we propose to optimize LLM-based agents with an adaptive and data-driven memory framework by modeling memory cycles. Specifically, we design an MoE gate function to facilitate memory retrieval, propose a learnable aggregation process to improve memory utilization, and develop task-specific reflection to adapt memory storage. Our memory framework empowers LLM-based agents to learn how to memorize information effectively in specific environments, with both off-policy and on-policy optimization. In order to evaluate the effectiveness of our proposed methods, we conduct comprehensive experiments across multiple aspects. To benefit the research community in this area, we release our project at this https URL.
+
+## 文件
+
+- `2508.16629.pdf` — 论文原文
+- `meta.json` — 结构化元数据

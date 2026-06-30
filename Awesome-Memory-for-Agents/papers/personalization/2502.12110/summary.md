@@ -1,0 +1,15 @@
+# A-MEM: Agentic Memory for LLM Agents
+
+**arXiv:** [2502.12110](https://arxiv.org/abs/2502.12110)
+**PDF:** [下载](https://arxiv.org/pdf/2502.12110) · 本地: `2502.12110.pdf`
+**作者:** Xu, Wujiang, Liang, Zujie, Mei, Kai, Gao, Hang, Tan, Juntao, Zhang, Yongfeng
+**日期:** 2025/02/17
+
+## Abstract
+
+While large language model (LLM) agents can effectively use external tools for complex real-world tasks, they require memory systems to leverage historical experiences. Current memory systems enable basic storage and retrieval but lack sophisticated memory organization, despite recent attempts to incorporate graph databases. Moreover, these systems&#39; fixed operations and structures limit their adaptability across diverse tasks. To address this limitation, this paper proposes a novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way. Following the basic principles of the Zettelkasten method, we designed our memory system to create interconnected knowledge networks through dynamic indexing and linking. When a new memory is added, we generate a comprehensive note containing multiple structured attributes, including contextual descriptions, keywords, and tags. The system then analyzes historical memories to identify relevant connections, establishing links where meaningful similarities exist. Additionally, this process enables memory evolution - as new memories are integrated, they can trigger updates to the contextual representations and attributes of existing historical memories, allowing the memory network to continuously refine its understanding. Our approach combines the structured organization principles of Zettelkasten with the flexibility of agent-driven decision making, allowing for more adaptive and context-aware memory management. Empirical experiments on six foundation models show superior improvement against existing SOTA baselines. The source code for evaluating performance is available at this https URL, while the source code of the agentic memory system is available at this https URL.
+
+## 文件
+
+- `2502.12110.pdf` — 论文原文
+- `meta.json` — 结构化元数据

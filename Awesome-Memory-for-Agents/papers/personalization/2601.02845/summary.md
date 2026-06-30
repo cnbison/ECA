@@ -1,0 +1,15 @@
+# TiMem: Temporal-Hierarchical Memory Consolidation for Long-Horizon Conversational Agents
+
+**arXiv:** [2601.02845](https://arxiv.org/abs/2601.02845)
+**PDF:** [下载](https://arxiv.org/pdf/2601.02845) · 本地: `2601.02845.pdf`
+**作者:** Li, Kai, Yu, Xuanqing, Ni, Ziyi, Zeng, Yi, Xu, Yao, Zhang, Zheqing, Li, Xin, Sang, Jitao, Duan, Xiaogang, Wang, Xuelei, Liu, Chengbao, Tan, Jie
+**日期:** 2026/01/06
+
+## Abstract
+
+Long-horizon conversational agents have to manage ever-growing interaction histories that quickly exceed the finite context windows of large language models (LLMs). Existing memory frameworks provide limited support for temporally structured information across hierarchical levels, often leading to fragmented memories and unstable long-horizon personalization. We present TiMem, a temporal--hierarchical memory framework that organizes conversations through a Temporal Memory Tree (TMT), enabling systematic memory consolidation from raw conversational observations to progressively abstracted persona representations. TiMem is characterized by three core properties: (1) temporal--hierarchical organization through TMT; (2) semantic-guided consolidation that enables memory integration across hierarchical levels without fine-tuning; and (3) complexity-aware memory recall that balances precision and efficiency across queries of varying complexity. Under a consistent evaluation setup, TiMem achieves state-of-the-art accuracy on both benchmarks, reaching 75.30% on LoCoMo and 76.88% on LongMemEval-S. It outperforms all evaluated baselines while reducing the recalled memory length by 52.20% on LoCoMo. Manifold analysis indicates clear persona separation on LoCoMo and reduced dispersion on LongMemEval-S. Overall, TiMem treats temporal continuity as a first-class organizing principle for long-horizon memory in conversational agents. The code is available at this https URL.
+
+## 文件
+
+- `2601.02845.pdf` — 论文原文
+- `meta.json` — 结构化元数据

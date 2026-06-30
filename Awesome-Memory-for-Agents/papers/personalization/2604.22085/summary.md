@@ -1,0 +1,15 @@
+# Memanto: Typed Semantic Memory with Information-Theoretic Retrieval for Long-Horizon Agents
+
+**arXiv:** [2604.22085](https://arxiv.org/abs/2604.22085)
+**PDF:** [下载](https://arxiv.org/pdf/2604.22085) · 本地: `2604.22085.pdf`
+**作者:** Abtahi, Seyed Moein, Rahnema, Rasa, Patel, Hetkumar, Patel, Neel, Fekri, Majid, Khani, Tara
+**日期:** 2026/04/23
+
+## Abstract
+
+The transition from stateless language model inference to persistent, multi session autonomous agents has revealed memory to be a primary architectural bottleneck in the deployment of production grade agentic systems. Existing methodologies largely depend on hybrid semantic graph architectures, which impose substantial computational overhead during both ingestion and retrieval. These systems typically require large language model mediated entity extraction, explicit graph schema maintenance, and multi query retrieval pipelines. This paper introduces Memanto, a universal memory layer for agentic artificial intelligence that challenges the prevailing assumption that knowledge graph complexity is necessary to achieve high fidelity agent memory. Memanto integrates a typed semantic memory schema comprising thirteen predefined memory categories, an automated conflict resolution mechanism, and temporal versioning. These components are enabled by Moorcheh&#39;s Information Theoretic Search engine, a no indexing semantic database that provides deterministic retrieval within sub ninety millisecond latency while eliminating ingestion delay. Through systematic benchmarking on the LongMemEval and LoCoMo evaluation suites, Memanto achieves state of the art accuracy scores of 89.8 percent and 87.1 percent respectively. These results surpass all evaluated hybrid graph and vector based systems while requiring only a single retrieval query, incurring no ingestion cost, and maintaining substantially lower operational complexity. A five stage progressive ablation study is presented to quantify the contribution of each architectural component, followed by a discussion of the implications for scalable deployment of agentic memory systems.
+
+## 文件
+
+- `2604.22085.pdf` — 论文原文
+- `meta.json` — 结构化元数据
