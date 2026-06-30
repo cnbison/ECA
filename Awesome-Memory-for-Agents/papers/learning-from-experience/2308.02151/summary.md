@@ -1,0 +1,15 @@
+# Retroformer: Retrospective Large Language Agents with Policy Gradient Optimization
+
+**arXiv:** [2308.02151](https://arxiv.org/abs/2308.02151)
+**PDF:** [下载](https://arxiv.org/pdf/2308.02151) · 本地: `2308.02151.pdf`
+**作者:** Yao, Weiran, Heinecke, Shelby, Niebles, Juan Carlos, Liu, Zhiwei, Feng, Yihao, Xue, Le, Murthy, Rithesh, Chen, Zeyuan, Zhang, Jianguo, Arpit, Devansh, Xu, Ran, Mui, Phil, Wang, Huan, Xiong, Caiming, Savarese, Silvio
+**日期:** 2023/08/04
+
+## Abstract
+
+Recent months have seen the emergence of a powerful new trend in which large language models (LLMs) are augmented to become autonomous language agents capable of performing objective oriented multi-step tasks on their own, rather than merely responding to queries from human users. Most existing language agents, however, are not optimized using environment-specific rewards. Although some agents enable iterative refinement through verbal feedback, they do not reason and plan in ways that are compatible with gradient-based learning from rewards. This paper introduces a principled framework for reinforcing large language agents by learning a retrospective model, which automatically tunes the language agent prompts from environment feedback through policy gradient. Specifically, our proposed agent architecture learns from rewards across multiple environments and tasks, for fine-tuning a pre-trained language model which refines the language agent prompt by summarizing the root cause of prior failed attempts and proposing action plans. Experimental results on various tasks demonstrate that the language agents improve over time and that our approach considerably outperforms baselines that do not properly leverage gradients from the environment. This demonstrates that using policy gradient optimization to improve language agents, for which we believe our work is one of the first, seems promising and can be applied to optimize other models in the agent architecture to enhance agent performances over time.
+
+## 文件
+
+- `2308.02151.pdf` — 论文原文
+- `meta.json` — 结构化元数据

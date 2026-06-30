@@ -1,0 +1,9 @@
+{
+  "id": "2503.19271",
+  "title": "MARS: Memory-Enhanced Agents with Reflective Self-improvement\n",
+  "authors": ["Liang, Xuechen", "Tao, Meiling", "Xia, Yinghui", "Wang, Jianhui", "Li, Kun", "Wang, Yijin", "Yang, Jingsong", "Shi, Tianyu", "Wang, Yuantao", "Zhang, Miao", "Wang, Xueqian\n"],
+  "date": "2025/03/25",
+  "abstract": "Large language models (LLMs) have made significant advances in the field of natural language processing, but they still face challenges such as continuous decision-making, lack of long-term memory, and limited context windows in dynamic environments. To address these issues, this paper proposes an innovative framework Memory-Enhanced Agents with Reflective Self-improvement. The MARS framework comprises three agents: the User, the Assistant, and the Checker. By integrating iterative feedback, reflective mechanisms, and a memory optimization mechanism based on the Ebbinghaus forgetting curve, it significantly enhances the agents capabilities in handling multi-tasking and long-span information. \n",
+  "url": "https://arxiv.org/abs/2503.19271",
+  "pdf_url": "https://arxiv.org/pdf/2503.19271"
+}

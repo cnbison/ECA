@@ -1,0 +1,15 @@
+# The Cognitive Bandwidth Bottleneck: Shifting Long-Horizon Agent from Planning with Actions to Planning with Schemas
+
+**arXiv:** [2510.07091](https://arxiv.org/abs/2510.07091)
+**PDF:** [下载](https://arxiv.org/pdf/2510.07091) · 本地: `2510.07091.pdf`
+**作者:** Xu, Baixuan, Zheng, Tianshi, Wang, Zhaowei, Tsang, Hong Ting, Wang, Weiqi, Fang, Tianqing, Song, Yangqiu
+**日期:** 2025/10/08
+
+## Abstract
+
+Enabling LLMs to effectively operate long-horizon task which requires long-term planning and multiple interactions is essential for open-world autonomy. Conventional methods adopt planning with actions where a executable action list would be provided as reference. However, this action representation choice would be impractical when the environment action space is combinatorial exploded (e.g., open-ended real world). This naturally leads to a question: As environmental action space scales, what is the optimal action representation for long-horizon agents? In this paper, we systematically study the effectiveness of two different action representations. The first one is conventional planning with actions (PwA) which is predominantly adopted for its effectiveness on existing benchmarks. The other one is planning with schemas (PwS) which instantiate an action schema into action lists (e.g., &#34;move [OBJ] to [OBJ]&#34; -&gt; &#34;move apple to desk&#34;) to ensure concise action space and reliable scalability. This alternative is motivated by its alignment with human cognition and its compliance with environment-imposed action format restriction. We propose cognitive bandwidth perspective as a conceptual framework to qualitatively understand the differences between these two action representations and empirically observe a representation-choice inflection point between ALFWorld (~35 actions) and SciWorld (~500 actions), which serve as evidence of the need for scalable representations. We further conduct controlled experiments to study how the location of this inflection point interacts with different model capacities: stronger planning proficiency shifts the inflection rightward, whereas better schema instantiation shifts it leftward. Finally, noting the suboptimal performance of PwS agents, we provide an actionable guide for building more capable PwS agents for better scalable autonomy.
+
+## 文件
+
+- `2510.07091.pdf` — 论文原文
+- `meta.json` — 结构化元数据

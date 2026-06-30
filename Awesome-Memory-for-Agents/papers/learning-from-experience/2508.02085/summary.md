@@ -1,0 +1,15 @@
+# SE-Agent: Self-Evolution Trajectory Optimization in Multi-Step Reasoning with LLM-Based Agents
+
+**arXiv:** [2508.02085](https://arxiv.org/abs/2508.02085)
+**PDF:** [下载](https://arxiv.org/pdf/2508.02085) · 本地: `2508.02085.pdf`
+**作者:** Lin, Jiaye, Guo, Yifu, Han, Yuzhen, Hu, Sen, Ni, Ziyi, Wang, Licheng, Chen, Mingguang, Liu, Hongzhang, Chen, Ronghao, He, Yangfan, Jiang, Daxin, Jiao, Binxing, Hu, Chen, Wang, Huacan
+**日期:** 2025/08/04
+
+## Abstract
+
+Large Language Model (LLM)-based agents have recently shown impressive capabilities in complex reasoning and tool use via multi-step interactions with their environments. While these agents have the potential to tackle complicated tasks, their problem-solving process, i.e., agents&#39; interaction trajectory leading to task completion, remains underexploited. These trajectories contain rich feedback that can navigate agents toward the right directions for solving problems correctly. Although prevailing approaches, such as Monte Carlo Tree Search (MCTS), can effectively balance exploration and exploitation, they ignore the interdependence among various trajectories and lack the diversity of search spaces, which leads to redundant reasoning and suboptimal outcomes. To address these challenges, we propose SE-Agent, a Self-Evolution framework that enables Agents to optimize their reasoning processes iteratively. Our approach revisits and enhances former pilot trajectories through three key operations: revision, recombination, and refinement. This evolutionary mechanism enables two critical advantages: (1) it expands the search space beyond local optima by intelligently exploring diverse solution paths guided by previous trajectories, and (2) it leverages cross-trajectory inspiration to efficiently enhance performance while mitigating the impact of suboptimal reasoning paths. Through these mechanisms, SE-Agent achieves continuous self-evolution that incrementally improves reasoning quality. We evaluate SE-Agent on SWE-bench Verified to resolve real-world GitHub issues. Experimental results across five strong LLMs show that integrating SE-Agent delivers up to 55% relative improvement, achieving state-of-the-art performance among all open-source agents on SWE-bench Verified. Our code and demonstration materials are publicly available at this https URL.
+
+## 文件
+
+- `2508.02085.pdf` — 论文原文
+- `meta.json` — 结构化元数据

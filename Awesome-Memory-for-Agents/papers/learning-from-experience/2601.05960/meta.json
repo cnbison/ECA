@@ -1,0 +1,9 @@
+{
+  "id": "2601.05960",
+  "title": "Distilling Feedback into Memory-as-a-Tool\n",
+  "authors": ["Gallego, V\u00edctor\n"],
+  "date": "2026/01/09",
+  "abstract": "We propose a framework that amortizes the cost of inference-time reasoning by converting transient critiques into retrievable guidelines, through a file-based memory system and agent-controlled tool calls. We evaluate this method on the Rubric Feedback Bench, a novel dataset for rubric-based learning. Experiments demonstrate that our augmented LLMs rapidly match the performance of test-time refinement pipelines while drastically reducing inference cost. \n",
+  "url": "https://arxiv.org/abs/2601.05960",
+  "pdf_url": "https://arxiv.org/pdf/2601.05960"
+}

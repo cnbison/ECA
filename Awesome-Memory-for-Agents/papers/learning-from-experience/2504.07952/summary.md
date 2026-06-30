@@ -1,0 +1,15 @@
+# Dynamic Cheatsheet: Test-Time Learning with Adaptive Memory
+
+**arXiv:** [2504.07952](https://arxiv.org/abs/2504.07952)
+**PDF:** [下载](https://arxiv.org/pdf/2504.07952) · 本地: `2504.07952.pdf`
+**作者:** Suzgun, Mirac, Yuksekgonul, Mert, Bianchi, Federico, Jurafsky, Dan, Zou, James
+**日期:** 2025/04/10
+
+## Abstract
+
+Despite their impressive performance on complex tasks, current language models (LMs) typically operate in a vacuum: Each input query is processed separately, without retaining insights from previous attempts. Here, we present Dynamic Cheatsheet (DC), a lightweight framework that endows a black-box LM with a persistent, evolving memory. Rather than repeatedly re-discovering or re-committing the same solutions and mistakes, DC enables models to store and reuse accumulated strategies, code snippets, and general problem-solving insights at inference time. This test-time learning enhances performance substantially across a range of tasks without needing explicit ground-truth labels or human feedback. Leveraging DC, Claude 3.5 Sonnet&#39;s accuracy more than doubled on AIME math exams once it began retaining algebraic insights across questions. Similarly, GPT-4o&#39;s success rate on Game of 24 increased from 10% to 99% after the model discovered and reused a Python-based solution. In tasks prone to arithmetic mistakes, such as balancing equations, DC enabled GPT-4o and Claude to reach near-perfect accuracy by recalling previously validated code, whereas their baselines stagnated around 50%. Beyond arithmetic challenges, DC yields notable accuracy gains on knowledge-demanding tasks. Claude achieved a 9% improvement in GPQA-Diamond and an 8% boost on MMLU-Pro problems. Crucially, DC&#39;s memory is self-curated, focusing on concise, transferable snippets rather than entire transcript. Unlike finetuning or static retrieval methods, DC adapts LMs&#39; problem-solving skills on the fly, without modifying their underlying parameters. Overall, our findings present DC as a promising approach for augmenting LMs with persistent memory, bridging the divide between isolated inference events and the cumulative, experience-driven learning characteristic of human cognition.
+
+## 文件
+
+- `2504.07952.pdf` — 论文原文
+- `meta.json` — 结构化元数据
