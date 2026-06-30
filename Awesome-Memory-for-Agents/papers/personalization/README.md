@@ -83,7 +83,7 @@
 
 | 日期 | 标题 | 第一作者 | arXiv ID |
 
-|:----:|:-----|:---------|:---------|
+|:----|:-----|:---------|:---------|
 | 2026/04/23 | [Memanto: Typed Semantic Memory with Information-Theoretic Retrieval for Long-Horizon Agents](2604.22085/summary.md) | Abtahi, Seyed Moein et al. | [2604.22085](2604.22085/summary.md) |
 | 2026/04/06 | [FileGram: Grounding Agent Personalization in File-System Behavioral Traces](2604.04901/summary.md) | Liu, Shuai et al. | [2604.04901](2604.04901/summary.md) |
 | 2026/01/15 | [Grounding Agent Memory in Contextual Intent](2601.10702/summary.md) | Yang, Ruozhen et al. | [2601.10702](2601.10702/summary.md) |
