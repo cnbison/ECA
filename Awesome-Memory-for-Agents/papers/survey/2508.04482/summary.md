@@ -1,0 +1,16 @@
+# OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use
+
+**arXiv:** [2508.04482](https://arxiv.org/abs/2508.04482)
+**PDF:** [下载](https://arxiv.org/pdf/2508.04482) · 本地: `2508.04482.pdf`
+**作者:** Hu, Xueyu, Xiong, Tao, Yi, Biao, Wei, Zishu, Xiao, Ruixuan, Chen, Yurun, Ye, Jiasheng, Tao, Meiling, Zhou, Xiangxin, Zhao, Ziyu, Li, Yuhuai, Xu, Shengze, Wang, Shenzhi, Xu, Xinchen, Qiao, Shuofei, Wang, Zhaokai, Kuang, Kun, Zeng, Tieyong, Wang, Liang, Li, Jiwei, Jiang, Yuchen Eleanor, Zhou, Wangchunshu, Wang, Guoyin, Yin, Keting, Zhao, Zhou, Yang, Hongxia, Wu, Fan, Zhang, Shengyu, Wu, Fei
+**日期:** 2025/08
+**GitHub:** [OS-Agent-Survey/OS-Agent-Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey)
+
+## Abstract
+
+The dream to create AI assistants as capable and versatile as the fictional J.A.R.V.I.S from Iron Man has long captivated imaginations. With the evolution of (multi-modal) large language models ((M)LLMs), this dream is closer to reality, as (M)LLM-based Agents using computing devices (e.g., computers and mobile phones) by operating within the environments and interfaces (e.g., Graphical User Interface (GUI)) provided by operating systems (OS) to automate tasks have significantly advanced. This paper presents a comprehensive survey of these advanced agents, designated as OS Agents. We begin by elucidating the fundamentals of OS Agents, exploring their key components including the environment, observation space, and action space, and outlining essential capabilities such as understanding, planning, and grounding. We then examine methodologies for constructing OS Agents, focusing on domain-specific foundation models and agent frameworks. A detailed review of evaluation protocols and benchmarks highlights how OS Agents are assessed across diverse tasks. Finally, we discuss current challenges and identify promising directions for future research, including safety and privacy, personalization and self-evolution. This survey aims to consolidate the state of OS Agents research, providing insights to guide both academic inquiry and industrial development. An open-source GitHub repository is maintained as a dynamic resource to foster further innovation in this field. We present a 9-page version of our work, accepted by ACL 2025, to provide a concise overview to the domain.
+
+## 文件
+
+- `2508.04482.pdf` — 论文原文
+- `meta.json` — 结构化元数据

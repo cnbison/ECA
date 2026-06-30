@@ -1,0 +1,17 @@
+# PersonaMem-v2: Towards Personalized Intelligence via Learning Implicit User Personas and Agentic Memory
+
+**arXiv:** [2512.06688](https://arxiv.org/abs/2512.06688)
+**PDF:** [下载](https://arxiv.org/pdf/2512.06688) · 本地: `2512.06688.pdf`
+**作者:** Jiang, Bowen, Yuan, Yuan, Shen, Maohao, Hao, Zhuoqun, Xu, Zhangchen, Chen, Zichen, Liu, Ziyi, Vijjini, Anvesh Rao, He, Jiashu, Yu, Hanchao, Poovendran, Radha, Wornell, Gregory, Ungar, Lyle, Roth, Dan, Chen, Sihao, Taylor, Camillo Jose
+**日期:** 2025/12
+**GitHub:** [bowen-upenn/PersonaMem](https://github.com/bowen-upenn/PersonaMem)
+**名称:** PersonaMem-v2
+
+## Abstract
+
+Personalization is one of the next milestones in advancing AI capability and alignment. We introduce PersonaMem-v2, the state-of-the-art dataset for LLM personalization that simulates 1,000 realistic user-chatbot interactions on 300+ scenarios, 20,000+ user preferences, and 128k-token context windows, where most user preferences are implicitly revealed to reflect real-world interactions. Using this data, we investigate how reinforcement fine-tuning enables a model to improve its long-context reasoning capabilities for user understanding and personalization. We also develop a framework for training an agentic memory system, which maintains a single, human-readable memory that grows with each user over time. In our experiments, frontier LLMs still struggle with implicit personalization, achieving only 37-48% accuracy. While they support long context windows, reasoning remains the bottleneck for implicit personalization tasks. Using reinforcement fine-tuning, we successfully train Qwen3-4B to outperforms GPT-5, reaching 53% accuracy in implicit personalization. Moreover, our agentic memory framework achieves state-of-the-art 55% accuracy while using 16x fewer input tokens, relying on a 2k-token memory instead of full 32k conversation histories. These results underscore the impact of our dataset and demonstrate agentic memory as a scalable path toward real-world personalized intelligence.
+
+## 文件
+
+- `2512.06688.pdf` — 论文原文
+- `meta.json` — 结构化元数据

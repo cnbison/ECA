@@ -1,0 +1,23 @@
+{
+  "id": "2601.04745",
+  "title": "KnowMe-Bench: Benchmarking Person Understanding for Lifelong Digital Companions",
+  "authors": [
+    "Wu, Tingyu",
+    "Chen, Zhisheng",
+    "Weng, Ziyan",
+    "Wang, Shuhe",
+    "Li, Chenglong",
+    "Zhang, Shuo",
+    "Hu, Sen",
+    "Wu, Silin",
+    "Lan, Qizhen",
+    "Wang, Huacan",
+    "Chen, Ronghao"
+  ],
+  "date": "2026/01",
+  "abstract": "Existing long-horizon memory benchmarks mostly use multi-turn dialogues or synthetic user histories, which makes retrieval performance an imperfect proxy for person understanding. We present \\BenchName, a publicly releasable benchmark built from long-form autobiographical narratives, where actions, context, and inner thoughts provide dense evidence for inferring stable motivations and decision principles. \\BenchName~reconstructs each narrative into a flashback-aware, time-anchored stream and evaluates models with evidence-linked questions spanning factual recall, subjective state attribution, and principle-level reasoning. Across diverse narrative sources, retrieval-augmented systems mainly improve factual accuracy, while errors persist on temporally grounded explanations and higher-level inferences, highlighting the need for memory mechanisms beyond retrieval. Our data is in \\href{KnowMeBench}{https://github.com/QuantaAlpha/KnowMeBench}.",
+  "url": "https://arxiv.org/abs/2601.04745",
+  "pdf_url": "https://arxiv.org/pdf/2601.04745",
+  "github": "https://github.com/QuantaAlpha/KnowMeBench",
+  "name": "KnowMe-Bench"
+}

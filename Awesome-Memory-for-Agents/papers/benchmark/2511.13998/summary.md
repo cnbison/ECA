@@ -1,0 +1,17 @@
+# LoCoBench-Agent: An Interactive Benchmark for LLM Agents in Long-Context Software Engineering
+
+**arXiv:** [2511.13998](https://arxiv.org/abs/2511.13998)
+**PDF:** [下载](https://arxiv.org/pdf/2511.13998) · 本地: `2511.13998.pdf`
+**作者:** Qiu, Jielin, Liu, Zuxin, Liu, Zhiwei, Murthy, Rithesh, Zhang, Jianguo, Chen, Haolin, Wang, Shiyu, Zhu, Ming, Yang, Liangwei, Tan, Juntao, Ram, Roshan, Prabhakar, Akshara, Awalgaonkar, Tulika, Chen, Zixiang, Cen, Zhepeng, Qian, Cheng, Heinecke, Shelby, Yao, Weiran, Savarese, Silvio, Xiong, Caiming, Wang, Huan
+**日期:** 2025/11
+**GitHub:** [SalesforceAIResearch/LoCoBench-Agent](https://github.com/SalesforceAIResearch/LoCoBench-Agent)
+**名称:** LoCoBench-Agent
+
+## Abstract
+
+As large language models (LLMs) evolve into sophisticated autonomous agents capable of complex software development tasks, evaluating their real-world capabilities becomes critical. While existing benchmarks like LoCoBench~\cite{qiu2025locobench} assess long-context code understanding, they focus on single-turn evaluation and cannot capture the multi-turn interactive nature, tool usage patterns, and adaptive reasoning required by real-world coding agents. We introduce \textbf{LoCoBench-Agent}, a comprehensive evaluation framework specifically designed to assess LLM agents in realistic, long-context software engineering workflows. Our framework extends LoCoBench's 8,000 scenarios into interactive agent environments, enabling systematic evaluation of multi-turn conversations, tool usage efficiency, error recovery, and architectural consistency across extended development sessions. We also introduce an evaluation methodology with 9 metrics across comprehension and efficiency dimensions. Our framework provides agents with 8 specialized tools (file operations, search, code analysis) and evaluates them across context lengths ranging from 10K to 1M tokens, enabling precise assessment of long-context performance. Through systematic evaluation of state-of-the-art models, we reveal several key findings: (1) agents exhibit remarkable long-context robustness; (2) comprehension-efficiency trade-off exists with negative correlation, where thorough exploration increases comprehension but reduces efficiency; and (3) conversation efficiency varies dramatically across models, with strategic tool usage patterns differentiating high-performing agents. As the first long-context LLM agent benchmark for software engineering, LoCoBench-Agent establishes a rigorous foundation for measuring agent capabilities, identifying performance gaps, and advancing autonomous software development at scale.
+
+## 文件
+
+- `2511.13998.pdf` — 论文原文
+- `meta.json` — 结构化元数据
