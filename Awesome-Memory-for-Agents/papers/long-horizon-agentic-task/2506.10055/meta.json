@@ -1,0 +1,27 @@
+{
+  "id": "2506.10055",
+  "title": "TaskCraft: Automated Generation of Agentic Tasks",
+  "authors": [
+    "Shi, Dingfeng",
+    "Cao, Jingyi",
+    "Chen, Qianben",
+    "Sun, Weichen",
+    "Li, Weizhen",
+    "Lu, Hongxuan",
+    "Dong, Fangchen",
+    "Qin, Tianrui",
+    "Zhu, King",
+    "Liu, Minghao",
+    "Yang, Jian",
+    "Zhang, Ge",
+    "Liu, Jiaheng",
+    "Zhang, Changwang",
+    "Wang, Jun",
+    "Jiang, Yuchen Eleanor",
+    "Zhou, Wangchunshu"
+  ],
+  "date": "2025/06/11",
+  "abstract": "Agentic tasks, which require multi-step problem solving with autonomy, tool use, and adaptive reasoning, are becoming increasingly central to the advancement of NLP and AI. However, existing instruction data lacks tool interaction, and current agentic benchmarks rely on costly human annotation, limiting their scalability. We introduce \\textsc{TaskCraft}, an automated workflow for generating difficulty-scalable, multi-tool, and verifiable agentic tasks with execution trajectories. TaskCraft expands atomic tasks using depth-based and width-based extensions to create structurally and hierarchically complex challenges. Empirical results show that these tasks improve prompt optimization in the generation workflow and enhance supervised fine-tuning of agentic foundation models. We present a large-scale synthetic dataset of approximately 36,000 tasks with varying difficulty to support future research on agent tuning and evaluation.",
+  "url": "https://arxiv.org/abs/2506.10055",
+  "pdf_url": "https://arxiv.org/pdf/2506.10055"
+}

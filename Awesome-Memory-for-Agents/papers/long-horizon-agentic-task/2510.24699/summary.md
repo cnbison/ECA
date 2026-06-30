@@ -1,0 +1,15 @@
+# AgentFold: Long-Horizon Web Agents with Proactive Context Management
+
+**arXiv:** [2510.24699](https://arxiv.org/abs/2510.24699)
+**PDF:** [下载](https://arxiv.org/pdf/2510.24699) · 本地: `2510.24699.pdf`
+**作者:** Ye, Rui, Zhang, Zhongwang, Li, Kuan, Yin, Huifeng, Tao, Zhengwei, Zhao, Yida, Su, Liangcai, Zhang, Liwen, Qiao, Zile, Wang, Xinyu, Xie, Pengjun, Huang, Fei, Chen, Siheng, Zhou, Jingren, Jiang, Yong
+**日期:** 2025/10/28
+
+## Abstract
+
+LLM-based web agents show immense promise for information seeking, yet their effectiveness on long-horizon tasks is hindered by a fundamental trade-off in context management. Prevailing ReAct-based agents suffer from context saturation as they accumulate noisy, raw histories, while methods that fixedly summarize the full history at each step risk the irreversible loss of critical details. Addressing these, we introduce AgentFold, a novel agent paradigm centered on proactive context management, inspired by the human cognitive process of retrospective consolidation. AgentFold treats its context as a dynamic cognitive workspace to be actively sculpted, rather than a passive log to be filled. At each step, it learns to execute a `folding' operation, which manages its historical trajectory at multiple scales: it can perform granular condensations to preserve vital, fine-grained details, or deep consolidations to abstract away entire multi-step sub-tasks. The results on prominent benchmarks are striking: with simple supervised fine-tuning (without continual pre-training or RL), our AgentFold-30B-A3B agent achieves 36.2% on BrowseComp and 47.3% on BrowseComp-ZH. Notably, this performance not only surpasses or matches open-source models of a dramatically larger scale, such as the DeepSeek-V3.1-671B-A37B, but also surpasses leading proprietary agents like OpenAI's o4-mini.
+
+## 文件
+
+- `2510.24699.pdf` — 论文原文
+- `meta.json` — 结构化元数据

@@ -1,0 +1,17 @@
+{
+  "id": "2512.22087",
+  "title": "Context as a Tool: Context Management for Long-Horizon SWE-Agents",
+  "authors": [
+    "Liu, Shukai",
+    "Yang, Jian",
+    "Jiang, Bo",
+    "Li, Yizhi",
+    "Guo, Jinyang",
+    "Liu, Xianglong",
+    "Dai, Bryan"
+  ],
+  "date": "2025/12/26",
+  "abstract": "Agents based on large language models have recently shown strong potential on real-world software engineering (SWE) tasks that require long-horizon interaction with repository-scale codebases. However, most existing agents rely on append-only context maintenance or passively triggered compression heuristics, which often lead to context explosion, semantic drift, and degraded reasoning in long-running interactions. We propose CAT, a new context management paradigm that elevates context maintenance to a callable tool integrated into the decision-making process of agents. CAT formalizes a structured context workspace consisting of stable task semantics, condensed long-term memory, and high-fidelity short-term interactions, and enables agents to proactively compress historical trajectories into actionable summaries at appropriate milestones. To support context management for SWE-agents, we propose a trajectory-level supervision framework, CAT-GENERATOR, based on an offline data construction pipeline that injects context-management actions into complete interaction trajectories. Using this framework, we train a context-aware model, SWE-Compressor. Experiments on SWE-Bench-Verified demonstrate that SWE-Compressor reaches a 57.6% solved rate and significantly outperforms ReAct-based agents and static compression baselines, while maintaining stable and scalable long-horizon reasoning under a bounded context budget.",
+  "url": "https://arxiv.org/abs/2512.22087",
+  "pdf_url": "https://arxiv.org/pdf/2512.22087"
+}

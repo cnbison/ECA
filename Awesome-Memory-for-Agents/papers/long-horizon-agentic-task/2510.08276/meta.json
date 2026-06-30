@@ -1,0 +1,24 @@
+{
+  "id": "2510.08276",
+  "title": "Beyond Turn Limits: Training Deep Search Agents with Dynamic Context Window",
+  "authors": [
+    "Tang, Qiaoyu",
+    "Xiang, Hao",
+    "Yu, Le",
+    "Yu, Bowen",
+    "Lu, Yaojie",
+    "Han, Xianpei",
+    "Sun, Le",
+    "Zhang, WenJuan",
+    "Wang, Pengbo",
+    "Liu, Shixuan",
+    "Zhang, Zhenru",
+    "Tu, Jianhong",
+    "Lin, Hongyu",
+    "Lin, Junyang"
+  ],
+  "date": "2025/10/09",
+  "abstract": "While recent advances in reasoning models have demonstrated cognitive behaviors through reinforcement learning, existing approaches struggle to invoke deep reasoning capabilities in multi-turn agents with long-horizon interactions. We propose DeepMiner, a novel framework that elicits such abilities by introducing high-difficulty training tasks and dynamic context window. DeepMiner presents a reverse construction method to generate complex but verifiable question-answer pairs from authentic web sources, which ensures the challenge and reliability of training data while injecting cognitive capabilities into multi-turn reasoning scenarios. We further design an elegant yet effective dynamic context management strategy for both training and inference, utilizing sliding window mechanisms while eliminating the dependency on external summarization models, thereby efficiently empowering the model to handle continuously expanding long-horizon contexts. Through reinforcement learning on Qwen3-32B, we develop DeepMiner-32B, which achieves substantial performance improvements across multiple search agent benchmarks. DeepMiner attains 33.5% accuracy on BrowseComp-en, surpassing the previous best open-source agent by almost 20 percentage points, and demonstrates consistent improvements on BrowseComp-zh, XBench-DeepSearch, and GAIA. Notably, our dynamic context management enables sustained interactions of nearly 100 turns within standard 32k context length, effectively addressing the context limitations that constrain existing multi-turn interaction systems.",
+  "url": "https://arxiv.org/abs/2510.08276",
+  "pdf_url": "https://arxiv.org/pdf/2510.08276"
+}

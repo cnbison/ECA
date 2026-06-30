@@ -1,0 +1,15 @@
+# Profile-Aware Maneuvering: A Dynamic Multi-Agent System for Robust GAIA Problem Solving by AWorld
+
+**arXiv:** [2508.09889](https://arxiv.org/abs/2508.09889)
+**PDF:** [下载](https://arxiv.org/pdf/2508.09889) · 本地: `2508.09889.pdf`
+**作者:** Xie, Zhitian, Wu, Qintong, Yu, Chengyue, Zhuang, Chenyi, Gu, Jinjie
+**日期:** 2025/08/13
+
+## Abstract
+
+The rapid advancement of large language models (LLMs) has empowered intelligent agents to leverage diverse external tools for solving complex real-world problems. However, this reliance introduces new challenges, as extended contexts and noisy tool outputs can undermine system reliability. To address this, we propose a dynamic Multi-Agent System (MAS) in our AWorld framework, where an Execution Agent is supervised by a Guard Agent that provides on-demand dynamic maneuvering, verifying and correcting the reasoning process to improve robustness over single-agent systems. To move beyond this generic supervision, we enhance the architecture with a methodology inspired by System Identification from control theory. This method first profiles the Execution Agent offline on a benchmark dataset to create a "performance fingerprint" of its unique weaknesses. The Guard Agent then leverages this fingerprint online to deliver profile-aware supervision, making targeted interventions based on known failure patterns rather than merely reacting to immediate logical flaws. Extensive experiments on the GAIA dataset demonstrate that this profile-aware MAS significantly improves both effectiveness and stability, outperforming not only single-agent systems but also its naive counterpart. This superior performance led our system to achieve first place among open-source projects on the prestigious GAIA leaderboard. These findings highlight that building truly trustworthy intelligent systems requires not just collaboration, but a deep, empirically-grounded understanding of each agent's unique capabilities and limitations.
+
+## 文件
+
+- `2508.09889.pdf` — 论文原文
+- `meta.json` — 结构化元数据
